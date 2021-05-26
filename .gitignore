@@ -4,3 +4,6 @@
 
 #ML classifier model ignore for pushing. Model can be obtained running file 'ML_training.py'
 classifier.sav
+
+#Pycache ignoring
+\__pycache__

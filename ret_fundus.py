@@ -2,6 +2,7 @@ from libs import *
 from ufuncs import *
 from ML_training import *
 from optic_disc import *
+from macula_color import *
 
 class retinal_fundus(object):
     retina = None
@@ -41,6 +42,9 @@ class retinal_fundus(object):
 
     def optic_disc(self):
         self.Optic_Disc['Mask'], self.Optic_Disc['Center'], self.Optic_Disc['Radius'] = retrieve_optic_disc(self.retina, self.mask)
+    
+    def macula(self):
+        self.Macula['Mask'], self.Macula['Center'], self.Macula['Radius'] = retrieve_macula(self.retina, self.mask)
         
     def __init__(self, image_dir, height = None, width = None):
         """
@@ -64,6 +68,7 @@ class retinal_fundus(object):
 
         self.vascular_tree(model_dir=f"{os.getcwd()}\\classifier.sav")
         self.optic_disc()
+        self.macula()
 
 
 if __name__ == '__main__':
@@ -80,6 +85,13 @@ if __name__ == '__main__':
     plt.axis(False)
 
     plt.figure()
-    plt.imshow(retina.retina + retina.Optic_Disc)
+    plt.imshow(retina.retina + retina.Optic_Disc['Mask'])
+    plt.title("Retinal Optic Disc")
+    plt.axis(False)
+
+    plt.figure()
+    plt.imshow(cv.circle(retina.retina, retina.Macula['Center'], retina.Macula['Radius'], (0, 0xFF, 0), 3))
+    plt.title("Retinal Macula")
+    plt.axis(False)
 
     plt.show()

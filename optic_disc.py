@@ -1,5 +1,3 @@
-from matplotlib.figure import Figure
-from matplotlib.pyplot import figure
 from libs import *
 from ufuncs import *
 
@@ -87,42 +85,7 @@ def retrieve_optic_disc(image, mask):
     center = (round(center[0]), round(center[1]))
     radius = round(radius)
 
-    plt.figure()
-    plt.imshow(I_med, cmap='gray')
-    plt.plot(MDP[1], MDP[0], 'o')
-    plt.title("Maximum Difference Method")
-    plt.axis(False)
-
-    plt.figure()
-    plt.imshow(I_otsu, cmap='gray')
-    plt.plot(MVP[1], MVP[0], 'o')
-    plt.title("Maximum Variance method")
-    plt.axis(False)
-
-    plt.figure()
-    plt.imshow(gauss_img, cmap='gray')
-    plt.plot(LFP[1], LFP[0], 'o')
-    plt.title("Low pass Filter method")
-    plt.axis(False)
-
-    plt.figure()
-    plt.imshow(image)
-    plt.plot(MDP[1], MDP[0], 'or', label = 'MDP')
-    plt.plot(MVP[1], MVP[0], 'og', label = 'MVP')
-    plt.plot(LFP[1], LFP[0], 'ob', label = 'LFP')
-    plt.plot(ODP[1], ODP[0], 'om', label = 'ODP')
-    plt.title("Candidate pixels and ODP")
-    plt.axis(False)
-    plt.legend()
-
-    plt.figure()
-    plt.imshow(od_image, cmap='gray')
-    plt.plot(center[0], center[1], 'o', label = 'OD center')
-    plt.title("Optic Disc binary area")
-    plt.axis(False)
-    plt.legend()
-
-    return cv.circle(od_image, center, radius, 0xFF, -1), center, radius
+    return cv.circle(od_image, center, radius, 0xFF, -1), center, radius 
 
 if __name__ == '__main__':
     image = plt.imread(f"{os.getcwd()}\\datasets\\Drive datasets\\images\\21_training.tif")
