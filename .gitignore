@@ -1,0 +1,6 @@
+#Large file database ignore for pushing
+#Datasets can be found in https://drive.google.com/drive/folders/18CM5gA1PsygCIoCX7RY42aGaXmZOenxW?usp=sharing
+\datasets
+
+#ML classifier model ignore for pushing. Model can be obtained running file 'ML_training.py'
+classifier.sav
