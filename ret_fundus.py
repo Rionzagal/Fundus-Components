@@ -85,7 +85,7 @@ if __name__ == '__main__':
     plt.axis(False)
 
     plt.figure()
-    plt.imshow(retina.retina + retina.Optic_Disc['Mask'])
+    plt.imshow(cv.circle(retina.retina, retina.Optic_Disc['Center'], retina.Optic_Disc['Radius'], (0, 0xFF, 0), 3))
     plt.title("Retinal Optic Disc")
     plt.axis(False)
 
