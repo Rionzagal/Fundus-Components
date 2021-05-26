@@ -52,6 +52,7 @@ def retrieve_optic_disc(image, mask):
             )
     else:
         ODP = candidate_pixels[2]
+
     ###Optic Disc area zoom
     OD_area_size = 2*round((np.sqrt(image.shape[0]*image.shape[1])/5)) + 1
     if (ODP[0] > (OD_area_size - 1)/2) and (ODP[1] > (OD_area_size - 1)/2):
@@ -66,7 +67,7 @@ def retrieve_optic_disc(image, mask):
     OD_gray = cv.cvtColor(OD_area, code = cv.COLOR_RGB2GRAY)
     _, OD_gray = cv.threshold(OD_gray, np.mean(OD_gray) + np.std(OD_gray), maxval = 0xFF, type = cv.THRESH_BINARY)
     areas = list(cv.contourArea(contour) for contour in cv.findContours(OD_gray, cv.RETR_TREE, cv.CHAIN_APPROX_NONE)[0])
-    r = 1*round((np.sqrt(np.mean(areas)/np.pi)))
+    r = 10*round((np.sqrt(np.mean(areas)/np.pi)))
     OD_aG = CLAHE(input_img = OD_area[:, :, 1])
     SE = cv.getStructuringElement(shape = cv.MORPH_ELLIPSE, ksize = (r, r))
     cv.blur(src = OD_aG, ksize = (3, 3), dst = OD_aG)
