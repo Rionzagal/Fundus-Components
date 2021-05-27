@@ -7,3 +7,6 @@ classifier.sav
 
 #Pycache ignoring
 \__pycache__
+
+#PNG ignore
+*.PNG
