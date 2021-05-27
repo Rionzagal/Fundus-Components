@@ -37,7 +37,7 @@ for file in files:
     axs[1].set_title(f"{name} Optic Disc & Macula")
     (ax.set_axis_off() for ax in axs)
 
-    plt.savefig(f"{name}_results.png", dpi=500)
+    plt.savefig(f"./results/{name}_results.png", dpi=500)
     plt.clf()
 
     try:
