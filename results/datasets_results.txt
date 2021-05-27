@@ -83,3 +83,79 @@
         Optic Disc -> Center: (84, 224); Radius: 60
         Macula -> Center: (270, 268); Radius: 43
     
+    22_training results:
+        Optic Disc -> Center: (456, 242); Radius: 50
+        Macula -> Center: (270, 270); Radius: 46
+    
+    23_training results:
+        Optic Disc -> Center: (34, 356); Radius: 102
+        Macula -> Center: (146, 345); Radius: 52
+    
+    24_training results:
+        Optic Disc -> Center: (448, 261); Radius: 34
+        Macula -> Center: (275, 269); Radius: 40
+    
+    25_training results:
+        Optic Disc -> Center: (434, 247); Radius: 33
+        Macula -> Center: (276, 268); Radius: 42
+    
+    26_training results:
+        Optic Disc -> Center: (89, 216); Radius: 28
+        Macula -> Center: (264, 268); Radius: 25
+    
+    27_training results:
+        Optic Disc -> Center: (460, 256); Radius: 57
+        Macula -> Center: (276, 272); Radius: 46
+    
+    28_training results:
+        Optic Disc -> Center: (458, 234); Radius: 49
+        Macula -> Center: (275, 267); Radius: 50
+    
+    29_training results:
+        Optic Disc -> Center: (476, 235); Radius: 28
+        Macula -> Center: (270, 277); Radius: 45
+    
+    30_training results:
+        Optic Disc -> Center: (462, 254); Radius: 38
+        Macula -> Center: (276, 271); Radius: 36
+    
+    31_training results:
+        Optic Disc -> Center: (391, 228); Radius: 94
+        Macula -> Center: (405, 491); Radius: 36
+    
+    32_training results:
+        Optic Disc -> Center: (468, 259); Radius: 58
+        Macula -> Center: (284, 270); Radius: 58
+    
+    33_training results:
+        Optic Disc -> Center: (436, 277); Radius: 51
+        Macula -> Center: (306, 282); Radius: 78
+    
+    34_training results:
+        Optic Disc -> Center: (273, 237); Radius: 94
+        Macula -> Center: (146, 365); Radius: 113
+    
+    35_training results:
+        Optic Disc -> Center: (86, 246); Radius: 20
+        Macula -> Center: (273, 264); Radius: 40
+    
+    36_training results:
+        Optic Disc -> Center: (454, 242); Radius: 39
+        Macula -> Center: (271, 271); Radius: 48
+    
+    37_training results:
+        Optic Disc -> Center: (469, 262); Radius: 29
+        Macula -> Center: (284, 281); Radius: 56
+    
+    38_training results:
+        Optic Disc -> Center: (465, 239); Radius: 54
+        Macula -> Center: (276, 270); Radius: 42
+    
+    39_training results:
+        Optic Disc -> Center: (93, 225); Radius: 23
+        Macula -> Center: (268, 266); Radius: 44
+    
+    40_training results:
+        Optic Disc -> Center: (464, 242); Radius: 29
+        Macula -> Center: (274, 272); Radius: 45
+    
