@@ -26,7 +26,7 @@ for file in files:
 
     print(f"Evaluating {name}.")
     
-    retina = retinal_fundus(f"{datasets}/{file}")
+    retina = retinal_fundus(f"{datasets}/{file}", 500)
     comps = cv.circle(retina.retina, retina.Optic_Disc['Center'], retina.Optic_Disc['Radius'], (0xFF,0,0), 3)
     comps = cv.circle(comps, retina.Macula['Center'], retina.Macula['Radius'], (0,0xFF,0), 3)
 
