@@ -271,3 +271,47 @@
         Optic Disc -> Center: (370, 227); Radius: 32
         Macula -> Center: (293, 223); Radius: 12
     
+    P1Basal results:
+        Optic Disc -> Center: (191, 295); Radius: 11
+        Macula -> Center: (280, 312); Radius: 15
+    
+    P2Basal results:
+        Optic Disc -> Center: (73, 184); Radius: 47
+        Macula -> Center: (223, 194); Radius: 24
+    
+    P4a3meses results:
+        Optic Disc -> Center: (90, 235); Radius: 29
+        Macula -> Center: (228, 277); Radius: 25
+    
+    P4Basal results:
+        Optic Disc -> Center: (282, 182); Radius: 33
+        Macula -> Center: (168, 72); Radius: 162
+    
+    P5a10meses results:
+        Optic Disc -> Center: (403, 189); Radius: 34
+        Macula -> Center: (285, 188); Radius: 23
+    
+    P5a6meses results:
+        Optic Disc -> Center: (334, 246); Radius: 35
+        Macula -> Center: (208, 248); Radius: 13
+    
+    P5año results:
+        Optic Disc -> Center: (338, 243); Radius: 31
+        Macula -> Center: (412, 238); Radius: 40
+    
+    P5Basal results:
+        Optic Disc -> Center: (108, 171); Radius: 32
+        Macula -> Center: (240, 187); Radius: 24
+    
+    P67a2años results:
+        Optic Disc -> Center: (99, 320); Radius: 78
+        Macula -> Center: (10, 210); Radius: 57
+    
+    P9a6meses results:
+        Optic Disc -> Center: (130, 258); Radius: 26
+        Macula -> Center: (277, 274); Radius: 25
+    
+    P9Basal results:
+        Optic Disc -> Center: (400, 199); Radius: 11
+        Macula -> Center: (258, 216); Radius: 13
+    
