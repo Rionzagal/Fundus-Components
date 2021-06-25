@@ -2,13 +2,13 @@
 This method is composed by three sub-methods, which focus on detecting and segmenting each of the main anatomical components found in the retina. 
 The three sub-methods found in the algorithm are as follows:
 1. Vascular tree detection and segmentation
->The detection of the vascular tree in the retina using a *Random Forest* model in order to do the classification between the non-vascular elements and the vascular elements. The model was trained using the [DRIVE datasets](https://drive.grand-challenge.org/) for the supervised training reference.
+>The detection of the vascular tree in the retina using a *Random Forest* model in order to do the classification between the non-vascular elements and the vascular elements. The model was trained using the [DRIVE datasets](https://drive.grand-challenge.org/) for the supervised training reference. This method is based on the work directed by *(GeethaRamani and Balasubramanian,2016)*. [^1]
 
 2. Optic Disc detection and segmentation
->The detection of the Optic Disc structure in the retina using a voting mechanism based on statistical analysis and color intensity analysis. This method is based on the work directed by *(Aquino et al., 2010)*. [^1]
+>The detection of the Optic Disc structure in the retina using a voting mechanism based on statistical analysis and color intensity analysis. This method is based on the work directed by *(Aquino et al., 2010)*. [^2]
 
 3. Macula detection and segmentation
->The detection of the Macula component based on color and morphological analysis on high contrast elements on the retina.
+>The detection of the Macula component based on color and morphological analysis on high contrast elements on the retina. This method is based on the work directed by *(GeethaRamani and Balasubramanian,2018)*. [^3]
 
 Each of the sub-methods is developed in its own *.py* file, found in the **master** branch, and are combined in the class file *ret_fundus.py* in order obtain the retinal elements and segment each of them. The result is an object with a dictionary structure of each element containing its segmented mask, center location and radius for the circular elements.
 
@@ -26,4 +26,9 @@ The datasets used for this project is a recopilation of sets of accepted images 
 - [ ] Set up the database architecture for resulting structures storing and display.
 - [ ] Generate a GUI application for display and control of the resulting algorithms.
 
-> [^1]: Detecting  the  optic  disc  bound-ary in digital fundus images usingmorphological, edge detection, andfeature extraction techniques
+## Footnotes:
+[^1]: Retinal blood vessel segmentation employing image processing and data mining techniques for computerized retinal image analysis
+
+[^2]: Detecting the optic disc boundary in digital fundus images usingmorphological, edge detection, andfeature extraction techniques
+
+[^3]: Macula segmentation and fovealocalization employing image processing and heuristic basedclustering for automated retinalscreening
