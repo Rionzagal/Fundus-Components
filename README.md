@@ -1,4 +1,7 @@
 # Retinal components detection method
+
+An algorithm destined to identify, separate and segment the main components of the retina using fundus images. This algorithm is created using _Python_ and _OpenCv_ for the image processing.
+
 This method is composed by three sub-methods, which focus on detecting and segmenting each of the main anatomical components found in the retina. 
 The three sub-methods found in the algorithm are as follows:
 1. Vascular tree detection and segmentation
